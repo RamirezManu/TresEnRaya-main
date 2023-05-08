@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="game1.css">
+    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="panel.css">
     <title>Document</title>
 </head>
+
 <body class="">
+    <header class="header">
+        <figure class="header_fig">
+            <img class="header__fig-icon" src="./img/3_raya.gif">
+        </figure>
+    </header>
+
     <!-- panelcito -->
     <div class="panel-container">
         <aside class="panel">
@@ -16,11 +26,11 @@
             <div class="container-buttons">
                 <button class="btns" id="btnDarkMode">Modo Oscuro</button>
                 <br><br>
-                <button  class="btns" id="hard-mode-button">Modo difícil</button>
+                <button class="btns" id="hard-mode-button">Modo difícil</button>
                 <br><br>
                 <button class="btns" id="single-player-mode-button">Modo Solo</button>
             </div>
-<br>
+            <br>
             <nav class="menu">
                 <a href="">Historial de partidas</a>
                 <p href="">Otros Juegos</p>
@@ -30,59 +40,90 @@
 
 
             </nav>
-          </aside><br>
-          <button type="button" class="boton"></button>
+        </aside><br>
+        <button type="button" class="boton"></button>
     </div>
 
-<div class="container-without-panel">
-    
-    <div id="name-inputs">
-        <label for="player1-name">Jugador 1:</label>
-        <input  class="inputs-text" type="text" id="player1-name" placeholder="Eustaquia.." required>
-        <br>
-        <label for="player2-name">Jugador 2:</label>
-        <input  class="inputs-text" type="text" id="player2-name" placeholder="Clodomiro.." required>
-        <br>
-        <button id="start-game-button">PLAY!</button>
-      
-        <p class="name-game" >Tres En Raya #</p>
+    <div class="container-without-panel">
+
+        <div id="name-inputs">
+            <label for="player1-name">Jugador 1:</label>
+            <input class="inputs-text" type="text" id="player1-name" placeholder="Eustaquia.." required>
+            <br>
+            <label for="player2-name">Jugador 2:</label>
+            <input class="inputs-text" type="text" id="player2-name" placeholder="Clodomiro.." required>
+            <br>
+            <button id="start-game-button">PLAY!</button>
+
+            <p class="name-game">Tres En Raya #</p>
 
 
-    
+
+        </div>
+
+
+        <div class="show-cronometro">
+            <div id="turn-timer"></div>
+        </div>
+
+
+        <div id="players">
+            <div id="player1"></div>
+            <div id="player2"></div>
+        </div>
+
+        <section class="section">
+            <aside class="section__aside">
+                <h2 class="section__aside-h2" id="player1_title">Jugador 1</h2>
+                <picture class="section__aside-picture">
+                    <img class="emoji" src="./img/jugador1.png" id="img_player1">
+                </picture>
+                <div class="section__div">
+                    <p class="section__div-p">Puntos:</p>
+                    <p class="section__div-number-score" id="score_1">0</p>
+                </div>
+            </aside>
+
+            <table>
+                <tr>
+                    <td class="my-shadow" id="0"></td>
+                    <td id="1"></td>
+                    <td id="2"></td>
+                </tr>
+                <tr>
+                    <td id="3"></td>
+                    <td id="4"></td>
+                    <td id="5"></td>
+                </tr>
+                <tr>
+                    <td id="6"></td>
+                    <td id="7"></td>
+                    <td id="8"></td>
+                </tr>
+            </table>
+
+
     </div>
 
+    <aside class="section__aside">
+        <h2 class="section__aside-h2" id="player2_title">Jugador 2</h2>
+        <picture class="section__aside-picture">
+            <img class="emoji" src="./img/jugador2.png" id="img_player2">
+        </picture>
+        <div class="section__div">
+            <p class="section__div-p">Puntos:</p>
+            <p class="section__div-number-score" id="score_2">0</p>
+        </div>
+    </aside>
 
-      <div class="show-cronometro">
-        <div id="turn-timer"></div>
-      </div>
+    </section>
 
-      
-      <div id="players">
-        <div id="player1"></div>
-        <div id="player2"></div>
-      </div>
-      
-    <table>
-        <tr>
-            <td class="my-shadow" id="0"></td>
-            <td id="1"></td>
-            <td id="2"></td>
-        </tr>
-        <tr>
-            <td id="3"></td>
-            <td id="4"></td>
-            <td id="5"></td>
-        </tr>
-        <tr>
-            <td id="6"></td>
-            <td id="7"></td>
-            <td id="8"></td>
-        </tr>
-    </table>
-</div>
-    
-    </body>
-    <script src="game.js"></script>
-    <script src="panel.js"></script>
-    <script src="modoOscuro.js"></script>
+
+    </div>
+
+</body>
+<script src="game.js"></script>
+<script src="panel.js"></script>
+<script src="modoOscuro.js"></script>
+
 </html>
