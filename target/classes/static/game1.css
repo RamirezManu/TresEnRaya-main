@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+  height: 60px;
+  margin-right: auto;
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 20px;
+  border-bottom-right-radius: 0px;
+}
+
+.header__fig-icon {
+  width: 60%;
+  height: 40px;
+  align-items: right;
+  padding-right: 80px;
+}
+
+#player1-name,
+#player2-name {
+  color: teal;
+}
+
+.section__aside-h2 {
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 5px teal, 0 0 10px teal, 0 0 15px teal;
+  text-align: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section__aside-h3 {
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 5px teal, 0 0 10px teal, 0 0 15px teal;
+  text-align: right;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dibujo1 {
+  width: 20%;
+  height: 20%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.dibujo1:hover {
+  transform: scale(1.5);
+}
+
+.dibujo2 {
+  width: 20%;
+  height: 20%;
+  float: right;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.dibujo2:hover {
+  transform: scale(1.5);
+}
